@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Air Quality Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Air Quality Checker</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+    <button onclick="getAirQuality()">Check AQI</button>
+    <div id="loading">Checking...</div>
+    <div id="aqi-output"></div>
+    <canvas id="pollutantChart" width="400" height="300"></canvas>
+    <button id="autoDetect">Auto Detect My Location</button>
+    <div id="output"></div>
+  </div>
+  <canvas id="pollutantChart" width="200" height="100"></canvas>
+  <canvas id="forecastChart" width="200" height="100"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+  <footer style="margin-top: 20px; font-size: 14px;">
+  Created by Lukmanu Ali — For environmental awareness 
+</footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #e0f7fa, #80deea);
+  color: #004d40;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.5s ease;
+  margin: 0;
+}
+
+/* Main container styling */
+.container {
+  text-align: center;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Input field */
+input {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #00796b;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+/* Air Quality Index Output */
+#aqi-output {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* General Output Box */
+#output {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: color 0.5s ease;
+}
+
+/* Loading text */
+#loading {
+  display: none;
+  color: #888;
+}
+
+/* Loading spinner */
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #00796b;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Graph/Chart */
+canvas {
+  margin-top: 5px;
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Extra spacing for outputs */
+#aqi-output, #output {
+  margin-top: 5px;
+}
+#output {
+  margin-bottom: 10px; /* Add this if it's not already there */
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    width: 95%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  canvas {
+    width: 100% !important;
+  }
+}
+
+
